@@ -1,0 +1,126 @@
+<html>
+ <head>
+  <title> Formulário digital </title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <script type="text/javascript" src="main.js">
+  </script>
+
+ </head>
+
+ <body>
+    <h1> Formulário ISO 9001</h1> 
+    <h2> Preencha o formulário abaixo:
+    </h2>
+    <br />
+
+<form name="formulario" id="formulario" action="https://support.google.com/docs/answer/139706?hl=pt-BR"
+ method="post" onsubmit="return valida(this)">  
+<!-- DADOS GERAIS -->
+<fieldset>
+  <legend>Dados Gerais</legend>
+  <table cellspacing="10">
+    <tr>
+      <td>
+        <label for="setor">Setor da empresa: </label>
+      </td>
+      <td align="left">
+        <input type="text" name="_setor" class="campo_setor" 
+        id="setor">
+      </td>
+      
+      <td>
+        <label for="responsável">Responsável: </label>
+      </td>
+      
+      <td align="left">
+        <input type="text" name="_responsavel" class="campo_responsavel"
+        id="responsavel">
+      </td>
+    </tr>
+    
+    <tr>
+        <td>
+          <label for="tipo de ocorrência">Tipo de ocorrência: </label>
+        </td>
+        <td align="left">
+          <select name="_tipo"  id="tipo">
+            <option type="text">Disposição</option>
+            <option type="text">Correção</option>
+          </select>
+        </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label for="_descricao">Descrição da ocorrência: </label>
+      </td>
+      
+      <td align="left">
+        <textarea class="form-control" 
+        id="exampleFormControlTextarea1" rows="3"></textarea>
+      </td>
+    </tr>
+   </table>
+</fieldset>
+<br />
+
+<!-- DADOS ESPECÍFICOS -->
+<fieldset>
+    <legend>Dados Específicos</legend>
+    <table cellspacing="10">
+    <tr>
+      <td>
+        <label for="natureza da ocorrência">Natureza da ocorrência:
+        </label>
+      </td>
+      
+      <td align="left">
+        <input type="checkbox" name="lista" value="produção"
+        id="list1" class="_checkboxs"> Produção
+        <input type="checkbox" name="lista" value="administração"
+        id="list2" class="_checkboxs"> Administrativa
+        <input type="checkbox" name="lista" value="ambiental"
+        id="list3" class="_checkboxs"> Ambiental
+      </td>
+    </tr>
+    
+    <tr>  
+      <td>
+        <label for="plano de contigência">Plano de contigência: </label>
+      </td>
+      
+      <td align="left">
+        <select name="_plano"  id="plano">
+            <option type="text">Plano de contigência 1</option>
+            <option type="text">Plano de contigência 2</option>
+            <option type="text">Plano de contigência 3</option>
+        </select>
+      </td>
+      
+      <td>
+        <label for="responsável pela aprovação">
+            Responsável pela aprovação
+        </label>
+      </td>
+      
+      <td align="left">
+        <input type="text" name="_responsavel2" 
+        class="campo_responsavel2" id="responsavel2">
+      </td>
+     </tr>
+    </table>
+   </fieldset>
+   <br/>
+   <br/>
+   <input type="submit" value="Enviar">
+   <input type="reset" value="Limpar">
+   
+   
+   
+
+  </form>
+  
+ </body>
+</html>    
